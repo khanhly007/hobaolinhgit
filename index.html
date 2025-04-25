@@ -31,7 +31,7 @@
     }).addTo(map);
 
     // 3. Load file GeoJSON hồ Bảo Linh và hiển thị trên bản đồ
-    fetch('bao_linh_lake.geojson')  // đảm bảo file này cùng thư mục với index.html
+    fetch('ho_bao_linh.geojson')  // đảm bảo file này cùng thư mục với index.html
       .then(response => response.json())
       .then(data => {
         var lakeLayer = L.geoJSON(data, {
